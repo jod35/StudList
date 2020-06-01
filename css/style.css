@@ -1,0 +1,66 @@
+*{
+    /* outline:1px solid powderblue; */
+    font-family: sans-serif;
+}
+.text-center{
+    text-align: center;
+    background-color: gold;
+    color: dodgerblue;
+    padding: 20px;
+}
+.main{
+    min-height: 80vh;
+    background-color: gold;
+    border-bottom: 5px solid black;
+    display: flex;
+}
+.form{
+    width: 40%;
+    font-weight: bold;
+    padding: 20px;
+    color: rgb(1, 122, 252);
+    
+}
+.list{
+    /* background-color: black; */
+    width: 70%;
+    color: dodgerblue;
+    padding: 20px;
+    
+}
+.form-control{
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    color: dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+    font-size: 20px;
+}
+
+.mybtn{
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid dodgerblue;
+    color: gold;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px black;
+    background: dodgerblue;
+    outline: none;
+}
+table{
+    box-shadow: 5px 5px 5px black;
+}
+
+thead{
+    background: dodgerblue;
+}
+th{
+    color: gold;
+    padding: 10px;
+    width: 200px;
+}
