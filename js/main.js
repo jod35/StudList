@@ -13,10 +13,7 @@ form.addEventListener("submit",submitListItem);
 
 
 function submitListItem(e){
-
-    
-    
-    
+        
     e.preventDefault();
 }
 
