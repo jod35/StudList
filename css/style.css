@@ -1,16 +1,22 @@
+:root{
+    --blue:dodgerblue;
+    --yellow:gold;
+}
+
 *{
     /* outline:1px solid powderblue; */
     font-family: sans-serif;
 }
 .text-center{
     text-align: center;
-    background-color: gold;
-    color: dodgerblue;
+    background-color:var(--yellow);
+    color: var(--blue);
     padding: 20px;
+    box-shadow: 5px 5px 5px black;
 }
 .main{
     min-height: 80vh;
-    background-color: gold;
+    background-color:var(--yellow);
     border-bottom: 5px solid black;
     display: flex;
 }
@@ -24,7 +30,7 @@
 .list{
     /* background-color: black; */
     width: 70%;
-    color: dodgerblue;
+    color: var(--blue);
     padding: 20px;
     
 }
@@ -35,8 +41,8 @@
     outline: none;
     border: none;
     background: none;
-    color: dodgerblue;
-    border-bottom: 2px solid dodgerblue;
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
     font-size: 20px;
 }
 
@@ -45,13 +51,18 @@
     border-radius: 30px;
     margin-top: 20px;
     cursor: pointer;
-    border: 2px solid dodgerblue;
-    color: gold;
+    border: 2px solid var(--blue);
+    color:var(--yellow);
     font-weight: bold;
     box-shadow: 5px 5px 5px black;
-    background: dodgerblue;
+    background: var(--blue);
     outline: none;
+    
 }
+
+
+
+
 table{
     box-shadow: 5px 5px 5px black;
 }
@@ -60,7 +71,7 @@ thead{
     background: dodgerblue;
 }
 th{
-    color: gold;
+    color:var(--yellow);
     padding: 10px;
     width: 200px;
 }

@@ -11,6 +11,7 @@
     <h1 class="text-center">Student List</h1>
     <main class="main">
         <div class="form">
+            <form action="" method="">
             <div class="form-group">
                 <label for="first_name">First Name</label>
                 <input type="text" name="first_name" id="first_name" class="form-control">
@@ -18,7 +19,7 @@
 
             <div class="form-group">
                 <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" id="last_name" class="form-control">
+                <input type="text" name="lastname" id="lastname" class="form-control">
             </div>
 
             <div class="form-group">
@@ -28,7 +29,10 @@
 
             <div class="form-group">
                 <label for="gender">Gender</label>
-                <input type="text" name="first_name" id="first_name" class="form-control">
+                <select name="gender" id="gender" class="form-control">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
             </div>
             
             <div class="form-group">
@@ -45,9 +49,9 @@
             </div>
 
             <div class="form-group">
-                <input type="submit" value="Add Student" class="mybtn">
+                <input type="submit" value="Add Student" class="mybtn" id="submit">
             </div>
-
+        </form>
         </div>
         <div class="list">
           <table>
@@ -64,7 +68,7 @@
         </div>
 
     </main>
-
-    <link rel="stylesheet" href="js/main.js">
+>
+    <script src="js/main.js"></script>
 </body>
 </html>
