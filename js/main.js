@@ -1,5 +1,6 @@
 
 const table_body=document.querySelector('.table-body');
+const text_center=document.querySelector('.text-center');
 
 
 // const add_button=document.querySelector("#submit");
@@ -31,11 +32,20 @@ function submitListItem(e){
     let table_item=document.querySelectorAll('.table-item');
 
     for(let i=0; i<table_item.length;i++){
-        if (i >5){
-            table_item[i].getElementsByClassName.display="none";
+        table_item[i].classList.add('item');
+        if (i >=10){
+            table_item[i].style.display="none";
+            
         }
-        
+        table_item[i].addEventListener('mouseover',()=>{
+            table_item[i].style.display="none";
+            table_item.length-=1; 
+            text_center.innerHTML = `${table_item.length} Items`;
+        });
     }
+
+
+    text_center.innerHTML = `${table_item.length} Items`;
 
 
     e.preventDefault();

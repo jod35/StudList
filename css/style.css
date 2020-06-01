@@ -61,10 +61,18 @@
 }
 
 
-
+td{
+    padding: 10px;
+    border-radius: 17px;
+}
+.table-item{
+    background-color: dodgerblue;
+    
+    color: var(--yellow);
+}
 
 table{
-    box-shadow: 5px 5px 5px 5px black;
+    box-shadow: 5px 5px 5px 5px rgb(94, 92, 92);
 }
 
 thead{
@@ -74,4 +82,9 @@ th{
     color:var(--yellow);
     padding: 10px;
     width: 200px;
+}
+
+.item:hover{
+    background-color:var(--yellow);
+    color: var(--blue);
 }
