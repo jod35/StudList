@@ -1,6 +1,7 @@
 
 const table_body=document.querySelector('.table-body');
 const text_center=document.querySelector('.text-center');
+const other_item_display=document.querySelector('.other-items');
 
 
 // const add_button=document.querySelector("#submit");
@@ -36,9 +37,19 @@ function submitListItem(e){
         if (i >=10){
             table_item[i].style.display="none";
             
+            
+            other_item_display.innerHTML+=
+        `<tr class='table-item'>
+            <td>${first_name}</td>
+            <td>${last_name}</td>
+            <td>${age}</td>
+            <td>${gender}</td>
+            <td>${grade}</td>
+        </tr>`;
+            
         }
-        table_item[i].addEventListener('mouseover',()=>{
-            table_item[i].style.display="none";
+        table_item[i].addEventListener('click',()=>{
+            table_item[i].style.backgroundColor="red";
             table_item.length-=1; 
             text_center.innerHTML = `${table_item.length} Items`;
         });

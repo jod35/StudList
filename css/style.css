@@ -86,5 +86,11 @@ th{
 
 .item:hover{
     background-color:var(--yellow);
-    color: var(--blue);
+    color: white;
+}
+
+.other-items{
+    background-color: var(--yellow);
+    box-shadow: 5px 5px 5px 5px rgb(94, 92, 92);
+}
 }
